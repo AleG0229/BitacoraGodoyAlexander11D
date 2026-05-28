@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Alexander Godoy</title>
+    <link rel="icon" type="image/png" href="recursos/img/EscCapuA.png">
+    <style>
+        /*CSS-lenguaje de programacion(Diseñar en cascada)*/
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        header{
+            padding: 20px;
+            background-color: rgb(99, 36, 12);
+            color: azure;
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgb(65, 63, 63);
+        }
+        footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            border-top: 1px solid rgb(220, 18, 243);
+            background-color: rgb(75, 234, 234);
+        }
+        @media(max-width:600px){
+            footer{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+        }
+        header h1{
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 
+                0 0 5px white,
+                0 0 10px rgb(218, 193, 247),
+                0 0 20px rgb(191, 144, 245),
+                0 0 40px  rgb(118, 0, 253);
+        }
+        /* --- Efecto Zoom al pasar el ratón (Hovers) --- */
+
+        /* 1. Preparamos las imágenes para que el cambio sea suave */
+        footer img, 
+        main img {
+            transition: transform 0.3s ease-in-out; /* Duración de 0.3 segundos */
+            display: inline-block; /* Ayuda a que la transformación funcione mejor en imágenes */
+        }
+
+        /* 2. Aplicamos el zoom cuando el mouse está encima (:hover) */
+        footer img:hover,
+        main img:hover {
+            transform: scale(1.2); /* Agrandar la imagen a un 120% de su tamaño original */
+            cursor: pointer; /* Cambia el cursor a una manita para indicar que es interactivo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bitácora Segunda y tercera Unidad</h1>
+    </header>
+    <main>
+        <h4>Contenido de la pagina WEB</h4>
+    </main>
+    <footer>
+        <span>@AleGod0229</span>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" width="200">
+    </footer>
+</body>
+</html>
